@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="to-do-app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+      <div class="wrapper">
+  
+       <h1>To-Do App</h1>
+       
+        <form id="ourForm">
+
+            <label for="">Choose a Theme</label>
+            <select id="selectTheme" onselect="optionSelection()">
+               
+                  <option id="dark" value="dark">Dark Theme</option>
+                  <option id="light" value="light" >Light Theme</option>
+                  
+              </select>
+        <br>
+        <br>
+        
+        <input type="text" id="ourField" placeholder="Do the laundry..." autocomplete="off" required>
+        <button type="submit" class="btn">Add a task</button>
+          
+        </form>
+
+        <p id="taskTotal" class="taskNum"> &#8810; Please add one task above to start &#8811; </p> 
+        
+        <h3 id="header"> Need to Do</h3>
+        
+        <ul id="ourList">
+
+
+        </ul>
+        
+           
+      </div>
+      </div>
+    
+      <script src="to-do-app.js"></script>
+
+</body>
+
+
+</html>
